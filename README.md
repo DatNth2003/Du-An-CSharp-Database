@@ -1,5 +1,5 @@
 # Du-An-CSharp-Database
-#Tables:
+# Tables:
     
 1. Users: Lưu thông tin về người dùng.
     - UserID (Primary Key)
@@ -45,7 +45,7 @@
     - ContactName
     - ContactTitle
     - ContactContent
-#Mối quan hệ
+# Mối quan hệ
     - Mỗi người dùng (Users) có một vai trò (Roles) thông qua khóa ngoại RoleID.
     - Mỗi quản trị viên (Admins) có một người dùng (Users) thông qua khóa ngoại UserID.
     - Mỗi đơn hàng (Orders) thuộc về một người dùng (Users) thông qua khóa ngoại UserID.
