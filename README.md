@@ -12,29 +12,30 @@
     - RoleID (Primary Key)    
     - RoleName 
 
-3.Admins: Lưu thông tin về quản trị viên.
+3. Admins: Lưu thông tin về quản trị viên.
     - AdminID (Primary Key)
     - UserID (Foreign Key)
 
-4.Products: Lưu thông tin về sản phẩm.
+4. Products: Lưu thông tin về sản phẩm.
     - ProductID (Primary Key)
     - ProductName
     - Price
     - Description
-5.Orders: Lưu thông tin về đơn hàng.
+5. Orders: Lưu thông tin về đơn hàng.
     - OrderID (Primary Key)
     - UserID (Foreign Key)
     - ProductID (Foreign Key)
     - Quantity
     - OrderDate
 
-6.Carts: Lưu thông tin về giỏ hàng người mua.
+6. Carts: Lưu thông tin về giỏ hàng người mua.
     - CartID (Primary Key)
     - UserID (Foreign Key)
     - ProductID (Foreign Key)
     - Quantity
 
 #Mối quan hệ
+
     - Mỗi người dùng (Users) có một vai trò (Roles) thông qua khóa ngoại RoleID.
     - Mỗi quản trị viên (Admins) có một người dùng (Users) thông qua khóa ngoại UserID.
     - Mỗi đơn hàng (Orders) thuộc về một người dùng (Users) thông qua khóa ngoại UserID.
